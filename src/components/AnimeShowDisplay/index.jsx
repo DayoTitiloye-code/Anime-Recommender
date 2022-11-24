@@ -1,7 +1,9 @@
 import React from 'react'
 
 const AnimeShowDisplay = ({ data }) => {
-  return (
+    console.log(data)
+    console.log('Hello')
+    return (
     <div className="animeShows">
         <h2>{data.attributes.slug}</h2>
         <p>{data.attributes.synopsis}</p>

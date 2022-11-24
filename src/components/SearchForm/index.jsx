@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const SearchForm = () =>{
+const SearchForm = ({setSearchValue }) =>{
     const[textInput, setTextInput] = useState('')
 
     function handleChange(e){
@@ -9,6 +9,7 @@ const SearchForm = () =>{
 
     function handleSubmit(e){
         e.preventDefault();
+        setSearchValue(textInput)
         console.log(textInput)
     }
 

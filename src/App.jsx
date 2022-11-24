@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css'
 
-import {Header, SearchForm } from './components'
+import {Header, SearchForm, AnimeShowList } from './components'
 
 const App = () =>{
+
+  const[searchValue, setSearchValue] = useState('')
+
   return (
     <>
     <Header/>
-    <SearchForm/>
+    <SearchForm setSearchValue={setSearchValue}/>
+    <AnimeShowList searchValue={searchValue}/>
     </>
   )
 }

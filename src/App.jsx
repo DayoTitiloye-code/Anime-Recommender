@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css'
 
+import {Header, SearchForm } from './components'
+
 const App = () =>{
   return (
     <>
-    <h1>Hello World</h1>
+    <Header/>
+    <SearchForm/>
     </>
   )
 }

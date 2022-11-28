@@ -16,6 +16,7 @@ body{
 }
 #header h1{
     font-family: 'Fjalla One', sans-serif;
+    font-size: 64px;
 }
 #header p{
     font-family: 'Questrial', sans-serif;
@@ -60,3 +61,30 @@ form #anime::placeholder{
 #anime[value]{
     font-family: 'Questrial', sans-serif;
 }
+
+#animeShows{
+    margin: 30px 10px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+#animeShows h2{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 64px;
+}
+#animeShows em {
+    font-family: 'Questrial', sans-serif;
+}
+#animeShows p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+}
+
+#animeShows img {
+    width: 30%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

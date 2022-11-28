@@ -17,9 +17,9 @@ const SearchForm = ({setSearchValue }) =>{
     return (
         <>
         <form onSubmit={handleSubmit}>
-            <label htmlFor="Search here: "></label>
-            <input type="text" id="anime" placeholder='Your category here' value={textInput} onChange={handleChange}/>
-            <input type="submit" value="Search"/>
+            <label htmlFor="anime">Search here: </label>
+            <input type="text" id="anime" placeholder='Your anime here' value={textInput} onChange={handleChange}/>
+            <input type="submit" value="Search" id='submit'/>
         </form>
         </>
     )

@@ -11,6 +11,7 @@ const SearchForm = ({setSearchValue }) =>{
         e.preventDefault();
         setSearchValue(textInput)
         console.log(textInput)
+        setTextInput('')
     }
 
     return (

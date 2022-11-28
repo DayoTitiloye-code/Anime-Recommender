@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css'
-
 import {Header, SearchForm, AnimeShowList } from './components'
 
 const App = () =>{

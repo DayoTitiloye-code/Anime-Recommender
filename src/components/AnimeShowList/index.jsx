@@ -9,7 +9,7 @@ const AnimeShowList = ({ searchValue }) =>{
 
     useEffect(() =>{
         async function getAnimeData (){
-            const response = await axios.get(`https://kitsu.io/api/edge/anime?filter[categories]=${ searchValue}`)
+            const response = await axios.get(`https://kitsu.io/api/edge/anime?filter[text]=${ searchValue}`)
             console.log(response.data.data)
             // JSON.parse(response.data)
             setAnimeData(response.data.data)

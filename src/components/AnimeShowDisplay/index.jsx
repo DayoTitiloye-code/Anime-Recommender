@@ -5,11 +5,11 @@ const AnimeShowDisplay = ({ data }) => {
     console.log('Hello')
     return (
     <div className="animeShows">
-        <h2>{data.attributes.slug}</h2>
+        <h2>{data.attributes.canonicalTitle}</h2>
+        <em>{data.attributes.ageRatingGuide}</em>
         <p>{data.attributes.synopsis}</p>
-        <p>{data.startDate}</p>
-        <p>{data.endDate}</p>
-        <img src={data.medium} />
+        <p>Anime Status: {data.attributes.status}</p>
+        <img src={data.attributes.posterImage.medium} />
     </div>
   )
 }

@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Routes, Route} from 'react-router-dom'
+
 import './App.css'
-import {Header, SearchForm, AnimeShowList } from './components'
+import AnimeSearch from './pages/AnimeSearch'
 
 const App = () =>{
-
-  const[searchValue, setSearchValue] = useState('')
-
   return (
-    <>
-    <Header/>
-    <SearchForm setSearchValue={setSearchValue}/>
-    <AnimeShowList searchValue={searchValue}/>
-    </>
+    // <>
+    // <Header/>
+    // <SearchForm setSearchValue={setSearchValue}/>
+    // <AnimeShowList searchValue={searchValue}/>
+    // </>
+    <Routes>
+      <Route path='/' element={<AnimeSearch/>}></Route>
+    </Routes>
   )
 }
 

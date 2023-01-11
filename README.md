@@ -6,3 +6,9 @@
 ## Usage
 - Open terminal and run `npm install` for required dependencies.
 - Run `npm run dev` to see app on local host.
+
+## Wins & Challenges
+### Wins
+- Working with APIs
+- Working with props
+- Created with React

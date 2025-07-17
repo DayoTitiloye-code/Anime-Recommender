@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 1550px;
 }
 
 #header{
@@ -12,8 +13,8 @@ body{
     padding: 30px 10px;
     background-image: url('../src/assets/Going-Merry.jpg');
     color: white;
-    
 }
+
 #header h1{
     font-family: 'Fjalla One', sans-serif;
     font-size: 64px;
@@ -29,18 +30,19 @@ form{
     align-items: center;
     width: 30vw;
     margin: auto;
-    padding-top: 10px;
+    margin-top: 35px;
     font-family: 'Questrial', sans-serif;
     justify-content: space-around;
 }
 form #anime{
     padding: 10px;
     border-radius: 20px;
-    border: 2px black solid;
+    /* border: 2px black solid; */
+    border: none;
+    background-color: #009EFF;
 }
-form label{
-    
-}
+
+
 form #submit {
     padding: 10px 15px;
     border-radius: 20px;
@@ -56,7 +58,7 @@ form #submit:hover {
 }
 form #anime::placeholder{
     font-family: 'Questrial', sans-serif;
-    color: black;
+    color: white;
 }
 #anime[value]{
     font-family: 'Questrial', sans-serif;
@@ -65,12 +67,13 @@ form #anime::placeholder{
 #animeShows{
     margin: 30px 10px;
     border-bottom: 2px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 75px;
 }
 #animeShows h2{
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
-    font-size: 64px;
+    font-size: 60px;
+    color: #009EFF;
 }
 #animeShows em {
     font-family: 'Questrial', sans-serif;
@@ -81,8 +84,8 @@ form #anime::placeholder{
 }
 
 #animeShows img {
-    width: 30%;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
